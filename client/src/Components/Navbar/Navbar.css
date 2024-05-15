@@ -29,6 +29,7 @@
 }
 .logo_div_Navbar {
   display: flex;
+  text-decoration: none;
   align-items: center;
 }
 .logo_title_navbar {
