@@ -9,7 +9,6 @@ import LikedVideo from "./../Pages/LikedVideo/LikedVideo";
 
 function AllRoutes() {
   return (
-    <Router>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/library" element={<Library />} />
@@ -18,7 +17,6 @@ function AllRoutes() {
         <Route path="/likedvideo" element={<LikedVideo />} />
         <Route path="/yourvideos" element={<YourVideo />} />
       </Routes>
-    </Router>
   );
 }
 

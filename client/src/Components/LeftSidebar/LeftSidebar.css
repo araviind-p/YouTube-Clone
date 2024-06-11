@@ -37,7 +37,7 @@
   z-index: 500;
 }
 .container2_DrawerLeftSidebar {
-  height: calc(100vh-3.6rem);
+  height: calc(100vh - 3.6rem);
   overflow-y: auto;
   background-color: rgb(28, 28, 28);
   width: 15rem;
