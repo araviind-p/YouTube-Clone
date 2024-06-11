@@ -5,6 +5,7 @@ import {
   MdOutlineSubscriptions,
   MdOutlineVideoLibrary,
 } from "react-icons/md";
+import shorts from "./shorts.png";
 import "./LeftSidebar.css";
 import { NavLink } from "react-router-dom";
 
@@ -18,6 +19,10 @@ function LeftSidebar() {
       <div className="icon_sidebar_div">
         <MdOutlineExplore size={22} className="icon_sidebar" />
         <div className="text_sidebar_icon">Explore</div>
+      </div>
+      <div className="icon_sidebar_div">
+        <img src={shorts} width={22} className="icon_sidebar" alt="shorts" />
+        <div className="text_sidebar_icon">Shorts</div>
       </div>
       <div className="icon_sidebar_div">
         <MdOutlineSubscriptions size={22} className="icon_sidebar" />
