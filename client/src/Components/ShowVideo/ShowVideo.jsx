@@ -17,7 +17,9 @@ function ShowVideo({ vid }) {
         <div className="video_details">
           <p className="title_vid_ShowVideo">title</p>
           <pre className="vid_views_UploadTime">1-1-2001</pre>
-          <pre className="vid_views_UploadTime">5 views <div className="dot"></div> video uploaded 1 year ago </pre>
+          <pre className="vid_views_UploadTime">
+            5 views <div className="dot"></div> video uploaded 1 year ago{" "}
+          </pre>
         </div>
       </div>
     </>
