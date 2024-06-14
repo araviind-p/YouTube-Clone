@@ -1,6 +1,7 @@
 import React from "react";
 import vid from "../../Components/Video/vid.mp4";
 import "./VideoPage.css";
+import LikeWatchLaterSaveBtns from "./LikeWatchLaterSaveBtns";
 
 function VideoPage() {
   return (
@@ -21,6 +22,7 @@ function VideoPage() {
                   <div className="views_videoPage">
                     5 views <div className="dot"></div> Uploaded 1 year ago
                   </div>
+                  <LikeWatchLaterSaveBtns />                                  
                 </div>
               </div>
               <div className="channel_details_videoPage">
