@@ -1,9 +1,9 @@
 import React from "react";
 import vid from "../../Components/Video/vid.mp4";
-import WHL from "../../Components/WHL/WHL";
+import ShowVideo from "../ShowVideo/ShowVideo";
 
-function WatchHistory() {
-  const history = [
+function ShowVideoList({ videoID }) {
+  const vids = [
     {
       _id: 1,
       video_src: vid,
@@ -34,7 +34,19 @@ function WatchHistory() {
       description: "description of video 4",
     },
   ];
-  return <WHL page={"History"} videoList={history} />;
+  return (
+    <div className="Container_ShowVideoGrid">
+      {vids
+        ?.filter((q) => q._id === videoID)
+        .map((vi) => {
+          return (
+            <div key={vi._id} className="video_box_app">
+              <ShowVideo vid={vi} />
+            </div>
+          );
+        })}
+    </div>
+  );
 }
 
-export default WatchHistory;
+export default ShowVideoList;
