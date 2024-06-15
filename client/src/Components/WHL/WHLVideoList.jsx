@@ -6,7 +6,6 @@ function WHLVideoList({ page, videoList }) {
    <>
    {
     videoList.map(m=>{
-        console.log("send id  ",m._id);
         return(
             <>
                 <ShowVideoList videoID={m._id} key={m._id}/>
